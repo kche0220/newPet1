@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+:root {
+  --background-blue: #b1d0ff;
+  --background-green: rgb(232, 248, 236);
+  --font-DoHyeon: 'Do Hyeon', sans-serif;
+  --font-Gowun: 'Gowun Batang', serif;
+  --font-Hahmlet: 'Hahmlet', serif;
+}
+body {
+  background: linear-gradient(#9198e5, #cbedf7, #9198e5);
+  backdrop-filter: brightness(1.5);
+}
+.wrap {
+    width: calc(100% - 25rem);
+    margin: auto;
+}
+.sec1 {
+    font-family: var(--font-DoHyeon);
+    padding: 70px 0 10px 105px; 
+    display: flex;
+    line-height: 1;
+}
+.sec1 span {
+    font-size: 40px;
+}
+.sec1 h2 {
+    font-size: 65px;
+}
+.sec1 p {
+    font-size: 20px;
+    font-family: var(--font-Hahmlet);
+    padding-bottom: 25%;
+}
+.sec1 .search {
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    overflow: hidden;
+    /* padding-top: 15px; */
+    display: flex;
+    /* border: none; */
+}
+.sec1 input {
+    border: none;
+    outline: none;
+    padding: 3%;
+    width: 80%;
+}
+.sec1 button {
+    outline: none;
+    width: 20%;
+    background-color: #b1d0ff;
+    border:none;
+}
+.items {
+  padding-top: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  display: flex;
+  gap: 15px;
+  margin: auto;
+}
+.item {
+  position: relative;
+  line-height: 2;
+  text-align: center;
+  font-family: var(--font-Hahmlet);
+  border-radius: 10px;
+  border: 2px solid #dbdbdb;
+  box-shadow: 5px 5px 5px -5px #aaa9a9;
+  width: 28%;
+  height: 230px;
+  background-color: rgb(241, 247, 253);
+  margin-top:50px;
+}
+h4 {
+  border-bottom: 2px solid #dbdbdb;
+  padding: 10px 0;
+  font-family: var(--font-DoHyeon);
+  font-size: 20px;
+}
+.item p {
+  padding: 10px 0;
+  /* text-decoration: solid underline rgb(221, 255, 159) 15px; */
+  text-underline-offset: -10px;
+}
+.more {
+  font-size: 14px;
+  padding: 7px 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: aliceblue;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+.more {
+  font-size: 14px;
+  padding: 7px 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: aliceblue;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+.sec3 {
+  margin: auto;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+}
+.sec3 button {
+  margin-left: 5px;
+  font-family: var(--font-DoHyeon);
+  text-align: center;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #b1d0ff;
+  background-size: 10px;
+  border-radius: 100px;
+  transition: 0.3s;
+  border: 1px solid #dbdbdb;
+}
+.sec3 button:active,
+.sec3 button:hover {
+  background-color: #aaa9a9;
+}
+@media(max-width:1300px) {
+  .item {
+    font-size: 14px;
+    width: 40%;
+  }
+  .sec1 {
+    padding: 50px 0 10px 75px; 
+  }
+}
+@media(max-width:900px) {
+  .item {
+    width: 100%;
+  }
+  .sec1 {
+    padding: 70px 0 10px 35px; 
+  }
+  .sec1 p {
+    padding: 30px;
+  }
+  .pagination {
+    display: none;
+  }
+}
